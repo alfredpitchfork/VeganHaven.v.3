@@ -1,0 +1,146 @@
+@import 'config';
+
+.reservation {
+  background: linear-gradient(
+      to right,
+      rgba(71, 71, 71, 0.748),
+      rgba(63, 63, 63, 0.763)
+    ),
+    $imgPlace;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  h2 {
+    padding-top: 1.5%;
+    margin-left: 63%;
+    color: white;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color: $secondaryColor;
+    font-size: 2rem;
+    font-family: $HeaderFont;
+  }
+  form {
+    width: 60%;
+    margin-left: 40%;
+    line-height: 1rem;
+    font-size: 1rem;
+
+    ul {
+      width: 100%;
+      height: 70vh;
+      list-style: none;
+      display: grid;
+      grid-template-areas:
+        'customer_name tablesize'
+        'email phone'
+        'date time'
+        'notes notes';
+      grid-template-rows: 1fr 1fr 1fr 2fr;
+      grid-template-columns: 1fr 1fr;
+
+      .name {
+        grid-area: customer_name;
+      }
+      .tablesize {
+        grid-area: tablesize;
+      }
+      .email {
+        grid-area: email;
+      }
+      .phone {
+        grid-area: phone;
+      }
+      .date {
+        grid-area: date;
+      }
+      .time {
+        grid-area: time;
+      }
+      .notes {
+        grid-area: notes;
+        // input {
+        //   width: 60rem;
+        //   height: 15rem;
+        //   overflow: hidden;
+        // }
+      }
+      li {
+        color: rgb(219, 219, 219);
+        width: 95%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        font-size: 1.2rem;
+        font-family: $SubtextFont;
+        font-weight: 600;
+      }
+      input {
+        margin-left: 1rem;
+        width: 60%;
+        height: 30%;
+        background-color: black;
+        color: white;
+        font-family: $ParagraphFont;
+        padding-left: 1rem;
+      }
+      select {
+        margin-left: 1rem;
+        width: 60%;
+        height: 30%;
+        background-color: black;
+        color: white;
+      }
+      textarea {
+        margin-left: 1rem;
+        width: 80%;
+        height: 50%;
+        background-color: black;
+        color: white;
+        padding: 1rem;
+        font-family: $ParagraphFont;
+        font-size: 1rem;
+      }
+    }
+    .side {
+      position: absolute;
+      left: 40%;
+      width: 55%;
+      bottom: 5%;
+
+      p {
+        font-size: 1rem;
+        font-family: $ParagraphFont;
+        color: white;
+        background: $primaryColor;
+        height: 50%;
+        overflow: hidden;
+        padding: 2%;
+        border-radius: 15px;
+      }
+      button {
+        margin-top: 2%;
+        padding: 1%;
+        width: 100%;
+        height: 25%;
+        font-size: 1.4rem;
+        background: $primaryColor;
+        border-radius: 83px 26px 26px 83px;
+        -moz-border-radius: 83px 26px 26px 83px;
+        -webkit-border-radius: 83px 26px 26px 83px;
+        border: 2px solid #000000;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        @include transition-fast;
+        &:active {
+          box-shadow: none;
+          background: $primaryColorFaded;
+          margin-top: 10px;
+          margin-left: 2px;
+        }
+      }
+    }
+  }
+}

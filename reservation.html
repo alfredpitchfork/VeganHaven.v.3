@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/dist/css/style.min.css">
+    <title>Vegan Haven</title>
+</head>
+
+<body>
+    <div class="header">
+        <nav class="nav">
+            <div class="logo">
+                <h1> <i class="logo__logo">
+
+                        <svg id="logo_svg" width="30.000000pt" height="30.000000pt" viewBox="0 0 512.000000 512.000000">
+                            <g fill="#fcd6ef">
+                                <path
+                                    d="m255.996 82.467c31.229 0 72.533.003 111.809 11.394 9.884-15.762 15.658-34.467 15.658-54.761v-24.1c0-8.284-6.716-15-15-15h-24.1c-32.634 0-67.924 16.153-88.366 49.667-20.438-33.506-55.719-49.667-88.368-49.667h-24.1c-8.284 0-15 6.716-15 15v24.1c0 20.293 5.773 38.998 15.658 54.761 39.275-11.392 80.58-11.394 111.809-11.394z" />
+                                <path
+                                    d="m373.899 127.545c-38.772-15.078-84.508-15.078-117.903-15.078s-79.131 0-117.903 15.078c-77.382 30.093-73.83 102.348-73.83 112.388 0 67.869 22.819 138.898 74.756 198.626 37.599 43.241 85.702 73.441 116.977 73.441s79.378-30.2 116.978-73.441c51.888-59.672 74.756-130.701 74.756-198.626-.001-9.133 3.97-82.132-73.831-112.388zm-214.304 111.322c-8.25 0-15-6.72-15-15s6.75-15 15-15 15 6.72 15 15c0 8.279-6.75 15-15 15zm48.201 80.333c-8.25 0-15-6.72-15-15s6.75-15 15-15 15 6.72 15 15-6.751 15-15 15zm48.2 80.333c-8.25 0-15-6.72-15-15s6.75-15 15-15 15 6.72 15 15-6.751 15-15 15zm0-160.666c-8.25 0-15-6.72-15-15s6.75-15 15-15 15 6.72 15 15c0 8.279-6.751 15-15 15zm48.2 80.333c-8.25 0-15-6.72-15-15s6.75-15 15-15 15 6.72 15 15-6.751 15-15 15zm48.199-80.333c-8.25 0-15-6.72-15-15s6.75-15 15-15 15 6.72 15 15c0 8.279-6.75 15-15 15z" />
+                            </g>
+                        </svg>
+                    </i>Vegan
+                    <span>Haven</span>
+                </h1>
+            </div>
+            <ul class="list">
+                <li class="listitem__Home">
+                    <a href="/#">Home</a>
+                </li>
+                <li class="listitem__Menu">
+                    <a href="/menu.html">Menu</a>
+                </li>
+                <li class="listitem__About">
+                    <a href="/about.html">About</a>
+                </li>
+                <li class="listitem__OnlineOrdering">
+                    <a href="/onlineOrdering.html">Online Ordering</a>
+                </li>
+                <li class="listitem__Reservation">
+                    <a href="/reservation.html">Reservation</a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+    <div class="reservation">
+        <h2 class="reservation_title">
+            Make a reservation!
+        </h2>
+        <form action="reservationComplete.html" class="reservation_form">
+            <ul>
+                <li class="name">
+                    <label for="name">Name :</label>
+                    <input type="text" name="name" id="" placeholder="John Doe">
+                </li>
+                <li class="tablesize">
+                    <label for="tablesize">Number of Guests :</label>
+                    <input type="text" name="numberOfGuests" id="" placeholder="0 ~ 25">
+                </li>
+                <li class="email">
+                    <label for="email">E-mail :</label>
+                    <input type="email" name="" id="" placeholder="johndoe@gmail.com">
+                </li>
+
+                <li class="phone">
+                    <label for="phone">Phone Number :</label>
+                    <input type="text" name="phone" id="" placeholder="555-555-5555">
+                </li>
+                <li class="date">
+                    <label for="date">Date of reservation :</label>
+                    <input type="date" value="2020-11-11">
+                </li>
+                <li class="time">
+                    <label for="time">Time of reservation :</label>
+                    <select name="Time" id="">
+                        <option value="5:30pm">5:30 PM</option>
+                        <option value="6:00pm">6:00 PM</option>
+                        <option value="5:00pm">5:00 PM</option>
+                        <option value="6:30pm">6:30 PM</option>
+                        <option value="7:00pm">7:00 PM</option>
+                        <option value="7:30pm">7:30 PM</option>
+                        <option value="8:00pm">8:00 PM</option>
+                        <option value="8:30pm">8:30 PM</option>
+                        <option value="9:00pm">9:00 PM</option>
+                        <option value="9:30pm">9:30 PM</option>
+                        <option value="10:00pm">10:00 PM</option>
+                        <option value="10:30pm">10:30 PM</option>
+                    </select>
+                </li>
+                <li class="notes">
+                    <label for="additional_notes">
+                        Additional Notes :
+                    </label>
+                    <textarea name="notes" id="" cols="30" rows="10"
+                        placeholder="Peanut Allergy/ Wheelchair accessible/ Have appetizer ready/ etc"></textarea>
+
+                </li>
+
+
+            </ul>
+            <div class='side'>
+                <p>
+                    Please complete the form to submit a reservation and we will try our best to accommodate our guests.
+                    Please keep in mind that seating at our restaurant is in high demand so any guests that fail to
+                    arrive
+                    15 minutes after the time of reservation will forfeit their table. If some guests have arrived but
+                    not
+                    the entire party, the orders must be given at the latest, at 30 minutes after the time of
+                    reservation or
+                    the table must be forfeit. Thank you for your reservation and we hope to be serving you soon!
+                </p>
+
+                <button action="submit">Set the Date!</button>
+            </div>
+
+
+
+
+        </form>
+
+    </div>
+
+
+    <footer>
+        <p> ©Copyright PerfectVision 2020</p>
+        <p>Website made with Tender Love and Care</p>
+    </footer>
+
+</body>
+
+</html>

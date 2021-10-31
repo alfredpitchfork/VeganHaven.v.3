@@ -1,0 +1,58 @@
+// .about_img {
+//   background: $img2;
+//   background-size: cover;
+//   background-position: center;
+//   background-attachment: fixed;
+//   width: 100vw;
+//   height: 90vh;
+//   position: sticky;
+// }
+.about {
+  background: $img3;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  &_title {
+    background: rgba(255, 255, 255, 0.623);
+    font-family: $HeaderFont;
+    // text-shadow: 2px 2px 8px $primaryColor;
+    font-size: 2rem;
+    margin-left: 45%;
+    margin-top: 5%;
+    width: 48%;
+    padding: 2rem;
+  }
+  &_text {
+    background: rgba(255, 255, 255, 0.623);
+    font-family: $SubtextFont;
+    text-align: center;
+    font-size: 1.25em;
+    line-height: 2em;
+    border-left: groove black;
+    width: 48%;
+    margin-left: 45%;
+    text-align: justify;
+    margin-bottom: 20%;
+    padding: 2rem;
+  }
+  &_text2 {
+    position: absolute;
+    font-family: $ParagraphFont;
+    color: white;
+    text-align: right;
+    width: 45%;
+    bottom: 20%;
+    left: 55%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.623);
+  }
+}
+footer {
+  z-index: 2;
+}

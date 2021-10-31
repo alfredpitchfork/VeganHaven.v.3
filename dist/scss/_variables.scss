@@ -1,0 +1,21 @@
+//Images
+$img1: url('/dist/img/VeganHaven/food10.jpg');
+$img2: url('/dist/img/VeganHaven/raw10.jpg');
+$img3: url('/dist/img/VeganHaven/food6.jpg');
+$img4: url('/dist/img/VeganHaven/raw5.jpg');
+$img5: url('/dist/img/VeganHaven/food1.jpg');
+$imgToGo: url('/dist/img/VeganHaven/raw4.jpg');
+$imgPlace: url('/dist/img/VeganHaven/food7.jpg');
+$imgPlace2: url('/dist/img/VeganHaven/raw2.jpg');
+
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=MuseoModerno:wght@500&family=Oxygen:wght@300&display=swap');
+
+$HeaderFont: 'MuseoModerno', cursive;
+$SubtextFont: 'Oxygen', sans-serif;
+$ParagraphFont: 'Montserrat', sans-serif;
+
+//Color Palette
+$primaryColor: #fcd6ef;
+$secondaryColor: rgb(190, 157, 178);
+$primaryColorFaded: rgb(182, 126, 157);

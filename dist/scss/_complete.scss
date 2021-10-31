@@ -1,0 +1,66 @@
+.complete {
+  background: $imgPlace2;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  &_title {
+    margin-left: 56.7%;
+    font-family: $HeaderFont;
+    text-shadow: 2px 2px 8px $primaryColor;
+    font-size: 2rem;
+    z-index: 3;
+    margin-bottom: 25%;
+  }
+  &_img {
+    width: 40vw;
+    height: 70vh;
+    background: rgba(124, 124, 124, 0.575);
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    display: flex;
+
+    flex-direction: column-reverse;
+  }
+  &_text {
+    position: absolute;
+    z-index: 3;
+    color: rgb(214, 214, 214);
+    width: 30%;
+    font-family: $SubtextFont;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 600;
+    line-height: 2em;
+    border-left: groove black;
+    left: 55%;
+    bottom: 55%;
+  }
+  &_text2 {
+    z-index: 3;
+    height: 5%;
+    font-family: $ParagraphFont;
+    color: white;
+    text-align: center;
+
+    line-height: 4%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    background: rgba(41, 41, 41, 0.541);
+    padding: 3rem;
+    white-space: pre-line;
+
+    a {
+      text-decoration-color: $primaryColor;
+      color: $primaryColor;
+    }
+  }
+}
+footer {
+  z-index: 2;
+}

@@ -1,0 +1,20 @@
+.div1 {
+  background: $img1;
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  .textdiv1 {
+    display: none;
+  }
+}
+
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8 {
+  display: none;
+}
